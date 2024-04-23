@@ -1,0 +1,18 @@
+/* BodyContent.css */
+.body-container {
+  background-color: yellow; /* Set background color for the body container */
+  width: calc(100% - 20px); /* Adjust based on sidebar width */
+  height: calc(100vh - 20px); /* Adjust based on sidebar height */
+  padding: 10px;
+}
+
+.yellow-square {
+  background-color: yellow; /* Set background color for the yellow square */
+  width: 200px; /* Set width of the yellow square */
+  height: 200px; /* Set height of the yellow square */
+  margin: 0 auto; /* Center the yellow square horizontally */
+  margin-top: 50px; /* Add space between the yellow square and the top */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
