@@ -1,23 +1,28 @@
+// NavBar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css"; 
+import { NavLink } from "react-router-dom";
 
-const NavBar= () => {
+const NavBar = () => {
   return (
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/" className="menu-item">Home</Link>
+          <NavLink to="/" activeClassName="active-link" className="menu-item">
+            Home
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className="menu-item">About</Link>
+          <NavLink to="/about" activeClassName="active-link" className="menu-item">
+            About me
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" className="menu-item">Contact</Link>
+          <NavLink to="/contact" activeClassName="active-link" className="menu-item">
+            Contact me
+          </NavLink>
         </li>
       </ul>
     </div>
-    
   );
 };
 

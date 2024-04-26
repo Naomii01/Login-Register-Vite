@@ -1,3 +1,42 @@
 body{
-background-color: lightcoral;
+background-color: #FFC9C9;
+height: 100vh;
+border: #E03130 !important;
+border-radius: 2px;
 }
+
+.sidebar {
+  width: 25%;
+  background-color:#FFC9C9;
+}
+
+.content-wrapper {
+  width: 85%; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100%;
+}
+
+.content {
+  width: 500px;
+  height: 500px;
+  background-color: #ffec99;
+  border: 2px solid #1971C2;
+;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.menu-item {
+  font-size: medium;
+  font-weight: bold;
+  color:#1971C2; 
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.menu-item:hover{
+    color: #E03130;
+  
+}
+
