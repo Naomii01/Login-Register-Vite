@@ -92,7 +92,7 @@ function SignUpPage() {
     Click on the button below to Continue to the Sign In page to Log in
   </span>
   <button className="py-3 px-9 bg-a6d8ff text-1971C2 font-bold rounded-2xl border-2 border-1971C2">
-    <Link to="/signin">Sign in</Link>
+    <Link to="/">Sign in</Link>
   </button>
 </div>
 
@@ -173,7 +173,7 @@ function SignUpPage() {
               </form>
               <div className="signInLink">
                 Already have an account?{' '}
-                <Link to="/signin" className="signIn">
+                <Link to="/" className="signIn">
                   Sign In
                 </Link>
               </div>

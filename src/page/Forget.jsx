@@ -70,7 +70,7 @@ const ForgotPassword = () => {
           </button>
           <div className="signInLink">
             Remembered your password?{" "}
-            <Link to="/signin" className="signIn">
+            <Link to="/" className="signIn">
               Sign In
             </Link>
           </div>

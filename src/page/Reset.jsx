@@ -74,7 +74,7 @@ const ResetPassword = () => {
             {isSubmitting ? "Resetting..." : "Reset Password"}
           </button>
           <div className="signInLink">
-            Back to <Link to="/signin" className="signIn">Sign In</Link>
+            Back to <Link to="/" className="signIn">Sign In</Link>
           </div>
         </form>
       </div>
