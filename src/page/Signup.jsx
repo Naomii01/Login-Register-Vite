@@ -21,6 +21,12 @@ function SignUpPage() {
   const validateForm = () => {
     const errors = {};
 
+    if (!fullName.trim()) {
+      errors.fullName = 'Please enter your Full Name.';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fullName)) {
+      errors.fullName = 'Please enter your Full Name.';
+    }
+
     if (!username.trim()) {
       errors.username = 'Please enter your email.';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username)) {
@@ -78,19 +84,19 @@ function SignUpPage() {
 
   return (
     <>
-      {errorMessage ? (
-       <div className="flex flex-col items-center pt-10 gap-3 text-2xl">
-       <span className="text-1971C2 font-semibold">
-         You Have Successfully Registered!!
-       </span>
-       <span>
-         Click on the button below to Continue to the Sign In page to Log in
-       </span>
-       <button className="py-3 px-9 bg-a6d8ff text-1971C2 font-bold rounded-2xl border-2 border-1971C2">
-         <Link to="/signin">Sign in</Link>
-       </button>
-     </div>
-     
+      {errorMessage ? (<div className="flex flex-col items-center pt-10 gap-3 text-2xl">
+  <span className="text-1971C2 font-semibold">
+    You Have Successfully Registered!!
+  </span>
+  <span>
+    Click on the button below to Continue to the Sign In page to Log in
+  </span>
+  <button className="py-3 px-9 bg-a6d8ff text-1971C2 font-bold rounded-2xl border-2 border-1971C2">
+    <Link to="/signin">Sign in</Link>
+  </button>
+</div>
+
+        
       ) : (
         <div className="container">
           <div className="header">
