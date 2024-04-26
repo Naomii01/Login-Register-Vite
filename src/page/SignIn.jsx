@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Confirmation from '../page/Confirmation'; // Import Confirmation component
+import Confirmation from './Confirmation';
 import './SignIn.css';
 
 function SignInPage() {

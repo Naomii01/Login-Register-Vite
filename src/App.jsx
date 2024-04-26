@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import Title from "./components/Title";
 import "./App.css";
 import Confirmation from "./page/Confirmation";
+import Success from "./page/Success";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />  
+              <Route path="/success" element={<Success/>}/>
             </Routes>
           </div> 
         </div>
